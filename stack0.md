@@ -8,7 +8,7 @@
 ssh -oHostKeyAlgorithms=+ssh-dss user@192.168.1.15
 ```
 - source code C:
-```c=
+```c
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
