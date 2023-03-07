@@ -1,4 +1,6 @@
 ## Stack0
+- Challenge: https://exploit.education/protostar/stack-zero/
+- Tải virtual machine machine: https://github.com/ExploitEducation/Phoenix/releases/download/v1.0.0-alpha-3/exploit-education-phoenix_1.0.0_amd64.deb
 - Đầu tiên import file iso của protostar vào virtual machine, đăng nhập bằng credentials: `user:user`
 - Chạy lệnh `/sbin/ifconfig` để lấy địa chỉ IP và SSH vào
 - Nếu gặp lỗi `Unable to negotiate with 192.168.1.15 port 22: no matching host key type found. Their offer: ssh-rsa,ssh-dss` thì thêm option `-oHostKeyAlgorithms=+ssh-dss`
